@@ -26,8 +26,8 @@ public class FileOpener {
     }
 
     private boolean isReady(char[] a) {
-        for (int i : a)
-            if (a[i] == 0)
+        for (char c : a)
+            if (c == 0)
                 return false;
         return a.length == n;
     }

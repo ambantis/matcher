@@ -1,0 +1,14 @@
+# sbt files
+project/project
+project/target
+target/
+
+# intellij idea files
+**/.idea/
+*.iml
+
+# vim temporary files
+*.sw?
+
+# apple files
+.DS_Store

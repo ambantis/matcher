@@ -6,7 +6,7 @@ import scala.util.{Failure, Success, Try}
 case class Strand(name: String, head: String, tail: String)
 
 case class Solution(lefts: Seq[Strand], rights: Seq[Strand]) {
-  def output =
+  def output: Seq[(String, String)] =
     for {
       l <- lefts
       r <- rights
@@ -25,7 +25,7 @@ object UltimateAnswer {
           findSolutions(data.toSeq)
         case Failure(e) =>
           println(s"sorry, had an error ${e.getMessage}")
-          for (ste <- e.getStackTrace) println()
+          for (ste <- e.getStackTrace) println(ste)
       }
     }
   }

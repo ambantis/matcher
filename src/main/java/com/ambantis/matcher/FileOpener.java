@@ -18,7 +18,7 @@ public class FileOpener {
 
     public FileOpener(String fileName, int n) {
         if (fileName == null || fileName.isEmpty())
-            throw new IllegalArgumentException("file name must not be non-empty");
+            throw new IllegalArgumentException("file name must be non-empty");
         if (n < 1)
             throw new IllegalArgumentException("`n` must be greater than zero");
         this.fileName = fileName;
